@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -22,6 +22,9 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v5
@@ -38,6 +41,8 @@ jobs:
         run: corepack pnpm install --frozen-lockfile
 
       - name: Build docs
+        env:
+          VP_BASE: /wp-next-public/
         run: corepack pnpm --dir docs docs:build
 
       - name: Upload Pages artifact
