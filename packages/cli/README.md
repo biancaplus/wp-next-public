@@ -41,4 +41,4 @@ wp-next sync --url=https://your-wp-site.com --dry-run
 
 生成项目包含 webhook 路由、`.env.example` 和 README 配置说明。
 
-完整参考见 [文档](https://github.com/biancaplus/wp-next/tree/main/docs/cli/)。
+更多说明见 [在线文档](https://biancaplus.github.io/wp-next-public/cli/)、`wp-next --help` 与 [npm @wp-next/cli](https://www.npmjs.com/package/@wp-next/cli)。

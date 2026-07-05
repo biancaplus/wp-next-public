@@ -13,6 +13,7 @@ const taskCommands = {
     ['corepack', ['pnpm', '--filter', '@wp-next/core', 'build']],
     ['corepack', ['pnpm', '--filter', '@wp-next/react', 'build']],
     ['corepack', ['pnpm', '--filter', '@wp-next/cli', 'build']],
+    ['corepack', ['pnpm', '--dir', 'docs', 'docs:build']],
   ],
   lint: [
     ['corepack', ['pnpm', '--filter', '@wp-next/core', 'lint']],

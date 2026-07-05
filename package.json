@@ -10,6 +10,9 @@
     "test": "node scripts/verify.mjs test",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "docs:dev": "corepack pnpm --dir docs docs:dev",
+    "docs:build": "corepack pnpm --dir docs docs:build",
+    "docs:preview": "corepack pnpm --dir docs docs:preview",
     "changeset": "changeset",
     "version-packages": "changeset version",
     "release": "node scripts/verify.mjs build && changeset publish"

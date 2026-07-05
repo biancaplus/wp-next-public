@@ -6,12 +6,12 @@
   "author": "wp-next contributors",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/biancaplus/wp-next.git",
+    "url": "git+https://github.com/biancaplus/wp-next-public.git",
     "directory": "packages/cli"
   },
-  "homepage": "https://github.com/biancaplus/wp-next#readme",
+  "homepage": "https://github.com/biancaplus/wp-next-public/tree/main/packages/cli#readme",
   "bugs": {
-    "url": "https://github.com/biancaplus/wp-next/issues"
+    "url": "https://github.com/biancaplus/wp-next-public/issues"
   },
   "keywords": [
     "wordpress",

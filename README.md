@@ -36,15 +36,17 @@ npm run dev
 wp-next sync --url=https://your-wp-site.com --revalidate-url=http://localhost:3000/api/wp-next/webhook
 ```
 
+查看完整 CLI 参数：`npx @wp-next/cli --help`
+
 ---
 
 ## npm 包
 
-| 包 | 说明 |
-|----|------|
-| [`@wp-next/cli`](./packages/cli/) | 命令行工具（`wp-next`） |
-| [`@wp-next/core`](./packages/core/) | WP REST/HMAC 客户端、类型、站点扫描、缓存 |
-| [`@wp-next/react`](./packages/react/) | `ContentRenderer` HTML 渲染 + SEO 工具 |
+| 包 | 说明 | 文档 |
+|----|------|------|
+| [`@wp-next/cli`](./packages/cli/) | 命令行工具（`wp-next`） | [README](./packages/cli/README.md) · [文档](https://biancaplus.github.io/wp-next-public/cli/) · [npm](https://www.npmjs.com/package/@wp-next/cli) |
+| [`@wp-next/core`](./packages/core/) | WP REST/HMAC 客户端、类型、缓存 | [README](./packages/core/README.md) · [文档](https://biancaplus.github.io/wp-next-public/config/) · [npm](https://www.npmjs.com/package/@wp-next/core) |
+| [`@wp-next/react`](./packages/react/) | `ContentRenderer` + SEO 工具 | [README](./packages/react/README.md) · [文档](https://biancaplus.github.io/wp-next-public/react/) · [npm](https://www.npmjs.com/package/@wp-next/react) |
 
 ### ContentRenderer 示例
 
@@ -73,30 +75,35 @@ export default function Post({ post }) {
 | WP REST API | `wp-next init --url=https://my-wp.com` |
 | HMAC 自定义 API | `wp-next init --url=... --mode=hmac --hmac-secret=xxx` |
 
-路线图：WPGraphQL、自定义 JSON schema、离线主题分析。
-
 ---
 
 ## WordPress 实时更新
 
-配合独立插件 **wp-next-connector**（独立仓库）：
+配合独立插件 **wp-next-connector**：
 
 1. WP 后台配置 Webhook URL 和 Secret
 2. 文章发布/更新/删除时发送 HMAC 签名请求
 3. Next.js `/api/wp-next/webhook` 验证签名并 `revalidatePath`
+
+生成项目的 webhook 说明见 CLI 模板输出的 `README.md` 与 `.env.example`。
 
 ---
 
 ## 仓库结构
 
 ```
-wp-next/
-├── packages/          # npm 发布的工具链（core / react / cli）
+wp-next-public/
+├── packages/
+│   ├── core/          # @wp-next/core
+│   ├── react/         # @wp-next/react
+│   └── cli/           # @wp-next/cli（含 init 模板）
 ├── docs/              # VitePress 用户文档
-├── next-demo/         # 本地示例（mock 模式，不发布）
-├── dev-docs/          # 开发者文档（不发布）
-└── PLAN.md            # 里程碑与发布计划
+├── scripts/           # lint / test / build 脚本
+├── .changeset/        # 版本与发布配置
+└── .github/workflows/ # CI + GitHub Pages
 ```
+
+**在线文档**：https://biancaplus.github.io/wp-next-public/
 
 ---
 
@@ -108,32 +115,32 @@ cd wp-next-public
 corepack enable
 corepack prepare pnpm@11.7.0 --activate
 corepack pnpm install
-corepack pnpm build
+corepack pnpm lint && corepack pnpm test && corepack pnpm build
+
+# 本地预览文档
+corepack pnpm docs:dev
 ```
 
-本仓库为 **npm 发布用公开 monorepo**，仅包含 `@wp-next/core`、`@wp-next/react`、`@wp-next/cli` 三个包。完整示例（`next-demo`）、用户文档（`docs/`）和开发者文档（`dev-docs/`）在私有开发仓库中维护。
-
 ---
 
-## 路线图
+## 发布
 
-| 阶段 | 内容 | 状态 |
-|------|------|------|
-| M1 | CLI init + pull | ✅ |
-| M2 | React ContentRenderer + next-demo | ✅ |
-| M3 | sync + SEO + 缓存 | ✅ |
-| M4 | 文档站 + Connector 联调 + CI | ✅ |
-| M4+ | npm 发布、create 脚手架、Playground | 🚧 |
+```bash
+npm login
+corepack pnpm release
+```
 
----
+### GitHub Pages 文档站
 
-## 文档
+推送 `main` 后，`.github/workflows/docs.yml` 会自动构建并部署文档。
 
-| 文档 | 说明 |
-|------|------|
-| [docs/](https://github.com/biancaplus/wp-next/tree/main/docs) | 用户文档（CLI、React、部署、Webhook） |
-| [dev-docs/](./dev-docs/) | 架构设计、编码规范 |
-| [PLAN.md](./PLAN.md) | 里程碑与 npm 发布清单 |
+**首次启用**（GitHub 仓库 Settings → Pages）：
+
+1. **Build and deployment** → Source 选 **GitHub Actions**
+2. 等待 `Deploy Docs` workflow 跑完
+3. 访问 https://biancaplus.github.io/wp-next-public/
+
+本地预览：`corepack pnpm docs:dev`（开发服务器路径含 `/wp-next-public/` 前缀）
 
 ---
 
