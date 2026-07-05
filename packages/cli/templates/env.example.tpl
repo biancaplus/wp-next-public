@@ -1,0 +1,2 @@
+WP_URL=#wpUrl
+WP_NEXT_WEBHOOK_SECRET=change-me

@@ -1,0 +1,58 @@
+{
+  "name": "@wp-next/cli",
+  "version": "0.1.1",
+  "description": "wp-next CLI — initialize and sync WordPress projects to Next.js",
+  "license": "MIT",
+  "author": "wp-next contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biancaplus/wp-next.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/biancaplus/wp-next#readme",
+  "bugs": {
+    "url": "https://github.com/biancaplus/wp-next/issues"
+  },
+  "keywords": [
+    "wordpress",
+    "nextjs",
+    "cli",
+    "scaffold",
+    "wp-next"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "wp-next": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wp-next/core": "workspace:*",
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "ora": "^8.0.0",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.5.0"
+  }
+}

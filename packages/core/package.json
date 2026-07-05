@@ -1,0 +1,52 @@
+{
+  "name": "@wp-next/core",
+  "version": "0.1.1",
+  "description": "wp-next core — WordPress data fetching, caching, and type definitions",
+  "license": "MIT",
+  "author": "wp-next contributors",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biancaplus/wp-next.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/biancaplus/wp-next#readme",
+  "bugs": {
+    "url": "https://github.com/biancaplus/wp-next/issues"
+  },
+  "keywords": [
+    "wordpress",
+    "headless",
+    "nextjs",
+    "rest-api",
+    "wp-next"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "test": "vitest run",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0"
+  }
+}
