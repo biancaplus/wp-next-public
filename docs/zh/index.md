@@ -36,5 +36,5 @@ features:
 
   - icon: 📦
     title: Monorepo 架构
-    details: "@wp-next/core 负责数据，@wp-next/react 负责渲染，@wp-next/cli 负责工具。"
+    details: "@wp-next-public/core 负责数据，@wp-next-public/react 负责渲染，@wp-next-public/cli 负责工具。"
 ---

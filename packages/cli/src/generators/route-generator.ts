@@ -1,7 +1,7 @@
-// @wp-next/cli — Route generator
+// @wp-next-public/cli — Route generator
 // Generates Next.js App Router files from WP site scan data
 
-import type { ScanResult, PostTypeScan } from '@wp-next/core';
+import type { ScanResult, PostTypeScan } from '@wp-next-public/core';
 import type { FileEntry } from './file-writer';
 import { applyTemplate, templateFile } from './file-writer.js';
 

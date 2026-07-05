@@ -1,4 +1,4 @@
-// @wp-next/cli — File writer utility
+// @wp-next-public/cli — File writer utility
 // Handles creating directories and writing template-generated files
 
 import * as fs from 'node:fs/promises';

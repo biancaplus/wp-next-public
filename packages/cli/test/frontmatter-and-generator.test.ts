@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { toFrontmatter } from '../src/lib/frontmatter.js';
 import { generateProject } from '../src/generators/route-generator.js';
-import type { ScanResult, WPPost } from '@wp-next/core';
+import type { ScanResult, WPPost } from '@wp-next-public/core';
 
 describe('toFrontmatter', () => {
   it('serializes unsafe strings as valid YAML frontmatter', () => {

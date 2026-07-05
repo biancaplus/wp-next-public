@@ -32,7 +32,7 @@ importers:
 
   packages/cli:
     dependencies:
-      '@wp-next/core':
+      '@wp-next-public/core':
         specifier: workspace:*
         version: link:../core
       chalk:
@@ -63,7 +63,7 @@ importers:
 
   packages/react:
     dependencies:
-      '@wp-next/core':
+      '@wp-next-public/core':
         specifier: workspace:*
         version: link:../core
       isomorphic-dompurify:

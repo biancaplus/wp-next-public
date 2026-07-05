@@ -7,7 +7,7 @@
 迁移前先了解内容结构：
 
 ```bash
-npx @wp-next/cli init --url https://your-wp-site.com --output /tmp/dry-run
+npx @wp-next-public/cli init --url https://your-wp-site.com --output /tmp/dry-run
 ```
 
 将显示：
@@ -67,7 +67,7 @@ wp-next sync --url https://your-wp-site.com
 用 ContentRenderer 替代主题 HTML 输出：
 
 ```tsx
-import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next/react';
+import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -85,7 +85,7 @@ export default function Post({ post }) {
 ## 第六步：迁移 SEO
 
 ```tsx
-import { createPostMeta, ArticleJsonLd } from '@wp-next/react';
+import { createPostMeta, ArticleJsonLd } from '@wp-next-public/react';
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug);

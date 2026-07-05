@@ -1,4 +1,4 @@
-// @wp-next/react — HTML sanitization
+// @wp-next-public/react — HTML sanitization
 // Uses DOMPurify for XSS protection.
 
 import DOMPurify from 'isomorphic-dompurify';

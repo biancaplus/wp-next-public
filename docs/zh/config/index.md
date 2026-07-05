@@ -11,7 +11,7 @@ wp-next 通过以下方式配置：
 生成项目从环境变量和 `lib/wp-client.ts` 读取连接设置：
 
 ```ts
-import { createWpClient } from '@wp-next/core';
+import { createWpClient } from '@wp-next-public/core';
 
 export const client = createWpClient({
   baseUrl: process.env.WP_URL || 'https://your-wp-site.com',

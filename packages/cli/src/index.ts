@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// @wp-next/cli — WordPress to Next.js migration CLI
+// @wp-next-public/cli — WordPress to Next.js migration CLI
 
 import { Command } from 'commander';
 import { initCommand } from './commands/init.js';

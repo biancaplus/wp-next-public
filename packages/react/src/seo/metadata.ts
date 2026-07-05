@@ -1,9 +1,9 @@
-// @wp-next/react — Next.js generateMetadata 工厂
+// @wp-next-public/react — Next.js generateMetadata 工厂
 // 从 WPPost 提取 SEO 元数据，兼容 Yoast / RankMath / AIOSEO
 
 import type { Metadata } from 'next';
-import type { WPPost, WPSiteInfo } from '@wp-next/core';
-import { decodeHtmlEntities } from '@wp-next/core';
+import type { WPPost, WPSiteInfo } from '@wp-next-public/core';
+import { decodeHtmlEntities } from '@wp-next-public/core';
 
 export interface PostMetaOptions {
   /** WP 文章数据 */

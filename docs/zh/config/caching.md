@@ -5,7 +5,7 @@
 ## 用法
 
 ```ts
-import { createCachedWpClient } from '@wp-next/core';
+import { createCachedWpClient } from '@wp-next-public/core';
 
 const wp = createCachedWpClient({
   baseUrl: process.env.WP_URL!,

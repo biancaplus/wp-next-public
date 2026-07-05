@@ -1,4 +1,4 @@
-// @wp-next/core — WP 站点扫描器
+// @wp-next-public/core — WP 站点扫描器
 // 自动发现 post types、taxonomies、内容结构
 
 import type {

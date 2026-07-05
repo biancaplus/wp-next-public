@@ -1,13 +1,13 @@
 # SEO
 
-`@wp-next/react` provides Next.js-first SEO utilities for WordPress content.
+`@wp-next-public/react` provides Next.js-first SEO utilities for WordPress content.
 
 ## generateMetadata
 
 `createPostMeta()` generates a Next.js `Metadata` object from a `WPPost`:
 
 ```tsx
-import { createPostMeta } from '@wp-next/react';
+import { createPostMeta } from '@wp-next-public/react';
 import type { Metadata } from 'next';
 
 export async function generateMetadata({ params }): Promise<Metadata> {
@@ -52,7 +52,7 @@ Structured data components for Google rich results.
 ### ArticleJsonLd
 
 ```tsx
-import { ArticleJsonLd } from '@wp-next/react';
+import { ArticleJsonLd } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -82,7 +82,7 @@ Generates:
 ### BreadcrumbJsonLd
 
 ```tsx
-import { BreadcrumbJsonLd } from '@wp-next/react';
+import { BreadcrumbJsonLd } from '@wp-next-public/react';
 
 <BreadcrumbJsonLd items={[
   { name: 'Home', url: '/' },
@@ -94,7 +94,7 @@ import { BreadcrumbJsonLd } from '@wp-next/react';
 ### OrganizationJsonLd
 
 ```tsx
-import { OrganizationJsonLd } from '@wp-next/react';
+import { OrganizationJsonLd } from '@wp-next-public/react';
 
 // In your root layout
 <OrganizationJsonLd
@@ -109,7 +109,7 @@ Generate sitemap XML for Next.js `sitemap.ts` route handlers:
 
 ```ts
 // app/sitemap.ts
-import { postsToSitemap, renderSitemapXml } from '@wp-next/react';
+import { postsToSitemap, renderSitemapXml } from '@wp-next-public/react';
 import { getPosts } from '@/lib/wp';
 
 export async function GET() {
@@ -124,7 +124,7 @@ export async function GET() {
 ### Multi-Sitemap Index
 
 ```ts
-import { generateSitemapIndex } from '@wp-next/react';
+import { generateSitemapIndex } from '@wp-next-public/react';
 
 export async function GET() {
   const index = generateSitemapIndex([
@@ -141,7 +141,7 @@ export async function GET() {
 
 ```ts
 // app/robots.ts
-import { generateRobotsTxt } from '@wp-next/react';
+import { generateRobotsTxt } from '@wp-next-public/react';
 
 export async function GET() {
   const robots = generateRobotsTxt('https://myblog.com', {

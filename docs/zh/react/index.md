@@ -1,11 +1,11 @@
 # React 组件
 
-`@wp-next/react` 提供在 Next.js 中渲染 WordPress 内容的组件与工具。
+`@wp-next-public/react` 提供在 Next.js 中渲染 WordPress 内容的组件与工具。
 
 ## 安装
 
 ```bash
-npm install @wp-next/react @wp-next/core
+npm install @wp-next-public/react @wp-next-public/core
 ```
 
 ## 模块一览

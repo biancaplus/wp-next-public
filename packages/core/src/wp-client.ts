@@ -1,4 +1,4 @@
-// @wp-next/core — WP 数据获取客户端
+// @wp-next-public/core — WP 数据获取客户端
 // 支持 WP REST API（标准）和 HMAC 自定义 API（blogset 兼容）
 
 import { decodeHtmlEntities } from './decode-html.js';

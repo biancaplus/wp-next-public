@@ -1,4 +1,4 @@
-// @wp-next/core — WordPress 核心工具库
+// @wp-next-public/core — WordPress 核心工具库
 // 类型定义、REST API 客户端、站点扫描器
 
 // Types

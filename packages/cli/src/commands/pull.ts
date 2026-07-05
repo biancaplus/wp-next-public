@@ -1,11 +1,11 @@
-// @wp-next/cli — wp-next pull 命令
+// @wp-next-public/cli — wp-next pull 命令
 // 从 WP 站点拉取内容 → 生成 MDX 文件 → 下载媒体
 
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import type { WPPost, DataSourceMode } from '@wp-next/core';
-import { createWpClient } from '@wp-next/core';
-import type { WPClient } from '@wp-next/core';
+import type { WPPost, DataSourceMode } from '@wp-next-public/core';
+import { createWpClient } from '@wp-next-public/core';
+import type { WPClient } from '@wp-next-public/core';
 import { toFrontmatter } from '../lib/frontmatter.js';
 
 export interface PullOptions {

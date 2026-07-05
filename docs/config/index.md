@@ -11,7 +11,7 @@ wp-next is configured through a combination of:
 Generated projects currently read WordPress connection settings from environment variables and the generated `lib/wp-client.ts`:
 
 ```ts
-import { createWpClient } from '@wp-next/core';
+import { createWpClient } from '@wp-next-public/core';
 
 export const client = createWpClient({
   baseUrl: process.env.WP_URL || 'https://your-wp-site.com',

@@ -1,7 +1,7 @@
-// @wp-next/react — JSON-LD 结构化数据组件
+// @wp-next-public/react — JSON-LD 结构化数据组件
 // 用于插入 <script type="application/ld+json"> 到页面中
 
-import type { WPPost, WPSiteInfo } from '@wp-next/core';
+import type { WPPost, WPSiteInfo } from '@wp-next-public/core';
 
 /**
  * Article JSON-LD

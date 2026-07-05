@@ -1,4 +1,4 @@
-# @wp-next/core
+# @wp-next-public/core
 
 ## 0.1.1
 

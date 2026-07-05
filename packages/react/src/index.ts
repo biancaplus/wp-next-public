@@ -1,4 +1,4 @@
-// @wp-next/react — HTML content renderer with pluggable processor pipeline
+// @wp-next-public/react — HTML content renderer with pluggable processor pipeline
 // Based on Frontity's html2react pattern: dangerouslySetInnerHTML + processors
 
 // Core

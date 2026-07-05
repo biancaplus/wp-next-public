@@ -1,4 +1,4 @@
-// @wp-next/core — 带缓存的 WP 客户端
+// @wp-next-public/core — 带缓存的 WP 客户端
 // 在内存中缓存 API 响应，支持按端点类型配置 TTL
 
 import type {

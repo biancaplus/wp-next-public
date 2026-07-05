@@ -7,7 +7,7 @@
 The future configuration file is expected to look like this:
 
 ```ts
-import type { WPNextConfig } from '@wp-next/core';
+import type { WPNextConfig } from '@wp-next-public/core';
 
 const config: WPNextConfig = {
   wpUrl: process.env.WP_URL!,

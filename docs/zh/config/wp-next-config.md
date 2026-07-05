@@ -7,7 +7,7 @@
 未来配置文件预期形态：
 
 ```ts
-import type { WPNextConfig } from '@wp-next/core';
+import type { WPNextConfig } from '@wp-next-public/core';
 
 const config: WPNextConfig = {
   wpUrl: process.env.WP_URL!,

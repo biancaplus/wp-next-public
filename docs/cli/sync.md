@@ -81,5 +81,5 @@ jobs:
       - uses: pnpm/action-setup@v2
       - run: pnpm install
       - run: pnpm build
-      - run: npx @wp-next/cli sync --url ${{ secrets.WP_URL }}
+      - run: npx @wp-next-public/cli sync --url ${{ secrets.WP_URL }}
 ```

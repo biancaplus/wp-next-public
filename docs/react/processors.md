@@ -9,7 +9,7 @@ Processors transform the HTML string before rendering. Each processor is a funct
 Adds `loading="lazy"` to all `<img>` tags.
 
 ```tsx
-import { imageProcessor } from '@wp-next/react';
+import { imageProcessor } from '@wp-next-public/react';
 
 <ContentRenderer html={post.content} processors={[imageProcessor]} />
 ```
@@ -29,7 +29,7 @@ import { imageProcessor } from '@wp-next/react';
 Adds `data-language` attribute to `<pre>` tags based on their `<code>` element's class.
 
 ```tsx
-import { codeProcessor } from '@wp-next/react';
+import { codeProcessor } from '@wp-next-public/react';
 
 <ContentRenderer html={post.content} processors={[codeProcessor]} />
 ```
@@ -49,7 +49,7 @@ import { codeProcessor } from '@wp-next/react';
 Adds `target="_blank"` and `rel="noopener noreferrer"` to external links. Internal links are left unchanged.
 
 ```tsx
-import { linkProcessor } from '@wp-next/react';
+import { linkProcessor } from '@wp-next-public/react';
 
 <ContentRenderer html={post.content} processors={[linkProcessor]} />
 ```
@@ -69,7 +69,7 @@ import { linkProcessor } from '@wp-next/react';
 ## Custom Processors
 
 ```tsx
-import type { ContentProcessor } from '@wp-next/react';
+import type { ContentProcessor } from '@wp-next-public/react';
 
 const myProcessor: ContentProcessor = {
   name: 'my-processor',

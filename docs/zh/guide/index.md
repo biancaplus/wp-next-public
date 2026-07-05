@@ -12,7 +12,7 @@ wp-next 是一套将 WordPress 站点迁移到 Next.js 的工具链，提供 CLI
 ### 1. 生成 Next.js 项目
 
 ```bash
-npx @wp-next/cli init --url https://your-wp-site.com --output ./my-blog
+npx @wp-next-public/cli init --url https://your-wp-site.com --output ./my-blog
 cd my-blog
 npm install
 npm run dev
@@ -25,13 +25,13 @@ npm run dev
 若希望使用 MDX 文件而非实时 API：
 
 ```bash
-npx @wp-next/cli pull --url https://your-wp-site.com --all --output ./my-blog/content
+npx @wp-next-public/cli pull --url https://your-wp-site.com --all --output ./my-blog/content
 ```
 
 ### 3. 增量同步（可选）
 
 ```bash
-npx @wp-next/cli sync --url https://your-wp-site.com
+npx @wp-next-public/cli sync --url https://your-wp-site.com
 ```
 
 访问 `http://localhost:3000`，WordPress 内容已在 Next.js 中呈现。
@@ -48,7 +48,7 @@ npx @wp-next/cli sync --url https://your-wp-site.com
 ## 架构
 
 ```
-@wp-next/cli        @wp-next/react         @wp-next/core
+@wp-next-public/cli        @wp-next-public/react         @wp-next-public/core
      │                    │                      │
  wp-next init       ContentRenderer          createWpClient
  wp-next pull       imageProcessor            scanWpSite
@@ -58,7 +58,7 @@ npx @wp-next/cli sync --url https://your-wp-site.com
                     ArticleJsonLd
 ```
 
-从 npm 安装：`@wp-next/cli`、`@wp-next/react`、`@wp-next/core`。
+从 npm 安装：`@wp-next-public/cli`、`@wp-next-public/react`、`@wp-next-public/core`。
 
 ## 参与贡献
 

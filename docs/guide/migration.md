@@ -7,7 +7,7 @@ How to migrate an existing WordPress site to wp-next.
 Before migrating, understand your content structure:
 
 ```bash
-npx @wp-next/cli init --url https://your-wp-site.com --output /tmp/dry-run
+npx @wp-next-public/cli init --url https://your-wp-site.com --output /tmp/dry-run
 ```
 
 This shows:
@@ -66,7 +66,7 @@ Add a cron job or GitHub Action to run sync periodically.
 Replace your WP theme's rendering with ContentRenderer:
 
 ```tsx
-import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next/react';
+import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -84,7 +84,7 @@ export default function Post({ post }) {
 ## Step 6: Migrate SEO
 
 ```tsx
-import { createPostMeta, ArticleJsonLd } from '@wp-next/react';
+import { createPostMeta, ArticleJsonLd } from '@wp-next-public/react';
 
 export async function generateMetadata({ params }) {
   const post = await getPost(params.slug);

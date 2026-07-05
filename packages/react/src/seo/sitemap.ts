@@ -1,7 +1,7 @@
-// @wp-next/react — Sitemap & Robots 生成器
+// @wp-next-public/react — Sitemap & Robots 生成器
 // 提供工厂函数，在 Next.js sitemap.ts 中调用
 
-import type { WPPost, WPTerm } from '@wp-next/core';
+import type { WPPost, WPTerm } from '@wp-next-public/core';
 
 export interface SitemapEntry {
   url: string;

@@ -1,7 +1,7 @@
 import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  transpilePackages: ['@wp-next/core', '@wp-next/react'],
+  transpilePackages: ['@wp-next-public/core', '@wp-next-public/react'],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: '#wpHost' },

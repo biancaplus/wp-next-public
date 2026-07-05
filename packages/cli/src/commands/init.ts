@@ -1,12 +1,12 @@
-// @wp-next/cli — wp-next init 命令
+// @wp-next-public/cli — wp-next init 命令
 // 扫描 WP 站点 → 生成 Next.js 项目骨架
 
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import { scanWpSite } from '@wp-next/core';
+import { scanWpSite } from '@wp-next-public/core';
 import { writeFiles } from '../generators/file-writer.js';
 import { generateProject } from '../generators/route-generator.js';
-import type { DataSourceMode } from '@wp-next/core';
+import type { DataSourceMode } from '@wp-next-public/core';
 
 export interface InitOptions {
   url: string;

@@ -1,5 +1,5 @@
 {
-  "name": "@wp-next/core",
+  "name": "@wp-next-public/core",
   "version": "0.1.1",
   "description": "wp-next core — WordPress data fetching, caching, and type definitions",
   "license": "MIT",

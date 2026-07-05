@@ -1,10 +1,10 @@
-// @wp-next/cli — wp-next sync 命令
+// @wp-next-public/cli — wp-next sync 命令
 // 增量同步：比较本地时间戳 → 只拉取变更的文章
 
 import * as fs from 'node:fs/promises';
 import * as path from 'node:path';
-import type { WPPost, DataSourceMode } from '@wp-next/core';
-import { createWpClient } from '@wp-next/core';
+import type { WPPost, DataSourceMode } from '@wp-next-public/core';
+import { createWpClient } from '@wp-next-public/core';
 import { toFrontmatter } from '../lib/frontmatter.js';
 
 export interface SyncOptions {

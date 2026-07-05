@@ -1,4 +1,4 @@
-// @wp-next/react — Code block processor (HTML transform mode)
+// @wp-next-public/react — Code block processor (HTML transform mode)
 // Adds language markers to <pre><code> blocks
 
 import type { ContentProcessor } from '../processor.js';

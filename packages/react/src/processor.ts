@@ -1,4 +1,4 @@
-// @wp-next/react — Content processor interface and pipeline
+// @wp-next-public/react — Content processor interface and pipeline
 
 import type { ReactNode } from 'react';
 

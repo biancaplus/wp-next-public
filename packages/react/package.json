@@ -1,5 +1,5 @@
 {
-  "name": "@wp-next/react",
+  "name": "@wp-next-public/react",
   "version": "0.1.1",
   "description": "wp-next React — HTML content renderer with pluggable processor pipeline",
   "license": "MIT",
@@ -47,7 +47,7 @@
     "clean": "rm -rf dist"
   },
   "dependencies": {
-    "@wp-next/core": "workspace:*",
+    "@wp-next-public/core": "workspace:*",
     "isomorphic-dompurify": "^3.17.0"
   },
   "peerDependencies": {

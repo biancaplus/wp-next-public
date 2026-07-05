@@ -1,13 +1,13 @@
 # SEO
 
-`@wp-next/react` 提供面向 Next.js 的 SEO 工具。
+`@wp-next-public/react` 提供面向 Next.js 的 SEO 工具。
 
 ## generateMetadata
 
 `createPostMeta()` 从 `WPPost` 生成 Next.js `Metadata`：
 
 ```tsx
-import { createPostMeta } from '@wp-next/react';
+import { createPostMeta } from '@wp-next-public/react';
 
 export async function generateMetadata({ params }): Promise<Metadata> {
   const post = await getPost(params.slug);
@@ -60,7 +60,7 @@ export async function generateMetadata({ params }): Promise<Metadata> {
 ## Sitemap
 
 ```ts
-import { postsToSitemap, renderSitemapXml } from '@wp-next/react';
+import { postsToSitemap, renderSitemapXml } from '@wp-next-public/react';
 
 export async function GET() {
   const posts = await getPosts();
@@ -74,7 +74,7 @@ export async function GET() {
 ## robots.txt
 
 ```ts
-import { generateRobotsTxt } from '@wp-next/react';
+import { generateRobotsTxt } from '@wp-next-public/react';
 
 export async function GET() {
   const robots = generateRobotsTxt('https://myblog.com', {

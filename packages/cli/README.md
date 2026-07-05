@@ -1,11 +1,11 @@
-# @wp-next/cli
+# @wp-next-public/cli
 
 从 WordPress 站点一键生成 Next.js 项目。
 
 ## 快速开始
 
 ```bash
-npx @wp-next/cli init --url=https://your-wp-site.com --output ./my-blog
+npx @wp-next-public/cli init --url=https://your-wp-site.com --output ./my-blog
 ```
 
 ## 命令
@@ -41,4 +41,4 @@ wp-next sync --url=https://your-wp-site.com --dry-run
 
 生成项目包含 webhook 路由、`.env.example` 和 README 配置说明。
 
-更多说明见 [在线文档](https://biancaplus.github.io/wp-next-public/cli/)、`wp-next --help` 与 [npm @wp-next/cli](https://www.npmjs.com/package/@wp-next/cli)。
+更多说明见 [在线文档](https://biancaplus.github.io/wp-next-public/cli/)、`wp-next --help` 与 [npm @wp-next-public/cli](https://www.npmjs.com/package/@wp-next-public/cli)。

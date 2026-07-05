@@ -1,4 +1,4 @@
-# @wp-next/cli
+# @wp-next-public/cli
 
 ## 0.1.1
 
@@ -6,4 +6,4 @@
 
 - Initial public release of the wp-next toolchain: WordPress to Next.js migration CLI, core data client, and React content renderer.
 - Updated dependencies
-  - @wp-next/core@0.1.1
+  - @wp-next-public/core@0.1.1

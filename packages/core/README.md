@@ -1,17 +1,17 @@
-# @wp-next/core
+# @wp-next-public/core
 
 WordPress 数据获取、类型定义与缓存工具。
 
 ## 安装
 
 ```bash
-npm install @wp-next/core
+npm install @wp-next-public/core
 ```
 
 ## 使用
 
 ```ts
-import { createWpClient, scanWpSite } from '@wp-next/core';
+import { createWpClient, scanWpSite } from '@wp-next-public/core';
 
 const wp = createWpClient({ baseUrl: 'https://your-wp-site.com' });
 
@@ -31,7 +31,7 @@ const scan = await scanWpSite('https://your-wp-site.com');
 ### 带缓存的客户端
 
 ```ts
-import { createCachedWpClient } from '@wp-next/core';
+import { createCachedWpClient } from '@wp-next-public/core';
 
 const wp = createCachedWpClient({
   baseUrl: process.env.WP_URL!,
@@ -46,4 +46,4 @@ const wp = createCachedWpClient({
 - `createPostMeta`、`extractSeoFields` — SEO 字段提取
 - 类型：`WPPost`、`WPPage`、`WPTerm` 等
 
-更多说明见 [在线文档](https://biancaplus.github.io/wp-next-public/config/) 与 [npm @wp-next/core](https://www.npmjs.com/package/@wp-next/core)。
+更多说明见 [在线文档](https://biancaplus.github.io/wp-next-public/config/) 与 [npm @wp-next-public/core](https://www.npmjs.com/package/@wp-next-public/core)。

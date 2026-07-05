@@ -12,7 +12,7 @@ wp-next is a toolkit for migrating WordPress sites to Next.js. It provides a CLI
 ### 1. Generate a Next.js project
 
 ```bash
-npx @wp-next/cli init --url https://your-wp-site.com --output ./my-blog
+npx @wp-next-public/cli init --url https://your-wp-site.com --output ./my-blog
 cd my-blog
 npm install
 npm run dev
@@ -25,13 +25,13 @@ This creates a Next.js App Router project with routes, a WP client, webhook rece
 If you want MDX files instead of live API fetching:
 
 ```bash
-npx @wp-next/cli pull --url https://your-wp-site.com --all --output ./my-blog/content
+npx @wp-next-public/cli pull --url https://your-wp-site.com --all --output ./my-blog/content
 ```
 
 ### 3. Incremental sync (optional)
 
 ```bash
-npx @wp-next/cli sync --url https://your-wp-site.com
+npx @wp-next-public/cli sync --url https://your-wp-site.com
 ```
 
 Visit `http://localhost:3000` — your WordPress content is now a Next.js site.
@@ -48,7 +48,7 @@ Visit `http://localhost:3000` — your WordPress content is now a Next.js site.
 ## Architecture
 
 ```
-@wp-next/cli        @wp-next/react         @wp-next/core
+@wp-next-public/cli        @wp-next-public/react         @wp-next-public/core
      │                    │                      │
  wp-next init       ContentRenderer          createWpClient
  wp-next pull       imageProcessor            scanWpSite
@@ -58,7 +58,7 @@ Visit `http://localhost:3000` — your WordPress content is now a Next.js site.
                     ArticleJsonLd
 ```
 
-Install from npm: `@wp-next/cli`, `@wp-next/react`, `@wp-next/core`.
+Install from npm: `@wp-next-public/cli`, `@wp-next-public/react`, `@wp-next-public/core`.
 
 ## Contribute
 

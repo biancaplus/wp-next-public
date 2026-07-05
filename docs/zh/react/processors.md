@@ -23,7 +23,7 @@
 ## 自定义处理器
 
 ```tsx
-import type { ContentProcessor } from '@wp-next/react';
+import type { ContentProcessor } from '@wp-next-public/react';
 
 const myProcessor: ContentProcessor = {
   name: 'my-processor',

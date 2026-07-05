@@ -8,7 +8,7 @@
 ## 快速开始
 
 ```bash
-npx @wp-next/cli init --url=https://your-wp-site.com --output ./my-blog
+npx @wp-next-public/cli init --url=https://your-wp-site.com --output ./my-blog
 cd my-blog
 npm install
 npm run dev
@@ -36,7 +36,7 @@ npm run dev
 wp-next sync --url=https://your-wp-site.com --revalidate-url=http://localhost:3000/api/wp-next/webhook
 ```
 
-查看完整 CLI 参数：`npx @wp-next/cli --help`
+查看完整 CLI 参数：`npx @wp-next-public/cli --help`
 
 ---
 
@@ -44,14 +44,14 @@ wp-next sync --url=https://your-wp-site.com --revalidate-url=http://localhost:30
 
 | 包 | 说明 | 文档 |
 |----|------|------|
-| [`@wp-next/cli`](./packages/cli/) | 命令行工具（`wp-next`） | [README](./packages/cli/README.md) · [文档](https://biancaplus.github.io/wp-next-public/cli/) · [npm](https://www.npmjs.com/package/@wp-next/cli) |
-| [`@wp-next/core`](./packages/core/) | WP REST/HMAC 客户端、类型、缓存 | [README](./packages/core/README.md) · [文档](https://biancaplus.github.io/wp-next-public/config/) · [npm](https://www.npmjs.com/package/@wp-next/core) |
-| [`@wp-next/react`](./packages/react/) | `ContentRenderer` + SEO 工具 | [README](./packages/react/README.md) · [文档](https://biancaplus.github.io/wp-next-public/react/) · [npm](https://www.npmjs.com/package/@wp-next/react) |
+| [`@wp-next-public/cli`](./packages/cli/) | 命令行工具（`wp-next`） | [README](./packages/cli/README.md) · [文档](https://biancaplus.github.io/wp-next-public/cli/) · [npm](https://www.npmjs.com/package/@wp-next-public/cli) |
+| [`@wp-next-public/core`](./packages/core/) | WP REST/HMAC 客户端、类型、缓存 | [README](./packages/core/README.md) · [文档](https://biancaplus.github.io/wp-next-public/config/) · [npm](https://www.npmjs.com/package/@wp-next-public/core) |
+| [`@wp-next-public/react`](./packages/react/) | `ContentRenderer` + SEO 工具 | [README](./packages/react/README.md) · [文档](https://biancaplus.github.io/wp-next-public/react/) · [npm](https://www.npmjs.com/package/@wp-next-public/react) |
 
 ### ContentRenderer 示例
 
 ```tsx
-import { ContentRenderer, imageProcessor, codeProcessor, linkProcessor } from '@wp-next/react';
+import { ContentRenderer, imageProcessor, codeProcessor, linkProcessor } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -94,9 +94,9 @@ export default function Post({ post }) {
 ```
 wp-next-public/
 ├── packages/
-│   ├── core/          # @wp-next/core
-│   ├── react/         # @wp-next/react
-│   └── cli/           # @wp-next/cli（含 init 模板）
+│   ├── core/          # @wp-next-public/core
+│   ├── react/         # @wp-next-public/react
+│   └── cli/           # @wp-next-public/cli（含 init 模板）
 ├── docs/              # VitePress 用户文档
 ├── scripts/           # lint / test / build 脚本
 ├── .changeset/        # 版本与发布配置

@@ -5,7 +5,7 @@ Renders WordPress HTML content with an optional processor pipeline.
 ## Basic Usage
 
 ```tsx
-import { ContentRenderer } from '@wp-next/react';
+import { ContentRenderer } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -22,7 +22,7 @@ Without processors, ContentRenderer behaves exactly like `dangerouslySetInnerHTM
 ## With Processors
 
 ```tsx
-import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next/react';
+import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (

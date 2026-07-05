@@ -1,4 +1,4 @@
-// @wp-next/react — ContentRenderer component
+// @wp-next-public/react — ContentRenderer component
 // Renders HTML content with optional processor pipeline.
 // Falls back to dangerouslySetInnerHTML when no processors match.
 

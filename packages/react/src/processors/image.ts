@@ -1,4 +1,4 @@
-// @wp-next/react — Image processor (HTML transform mode)
+// @wp-next-public/react — Image processor (HTML transform mode)
 // Wraps <img> tags with data attributes for downstream optimization
 
 import type { ContentProcessor } from '../processor.js';

@@ -36,5 +36,5 @@ features:
 
   - icon: 📦
     title: Monorepo Architecture
-    details: "@wp-next/core for data, @wp-next/react for rendering, @wp-next/cli for tooling."
+    details: "@wp-next-public/core for data, @wp-next-public/react for rendering, @wp-next-public/cli for tooling."
 ---

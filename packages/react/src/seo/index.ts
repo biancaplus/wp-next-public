@@ -1,4 +1,4 @@
-// @wp-next/react/seo — SEO 工具集
+// @wp-next-public/react/seo — SEO 工具集
 
 export { createPostMeta } from './metadata.js';
 export type { PostMetaOptions } from './metadata.js';

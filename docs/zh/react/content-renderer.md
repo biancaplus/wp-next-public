@@ -5,7 +5,7 @@
 ## 基础用法
 
 ```tsx
-import { ContentRenderer } from '@wp-next/react';
+import { ContentRenderer } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (
@@ -22,7 +22,7 @@ export default function Post({ post }) {
 ## 使用处理器
 
 ```tsx
-import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next/react';
+import { ContentRenderer, imageProcessor, linkProcessor } from '@wp-next-public/react';
 
 export default function Post({ post }) {
   return (

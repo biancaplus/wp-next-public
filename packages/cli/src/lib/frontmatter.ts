@@ -1,7 +1,7 @@
-// @wp-next/cli — Frontmatter 格式化工具
+// @wp-next-public/cli — Frontmatter 格式化工具
 // 共享于 pull 和 sync 命令
 
-import type { WPPost } from '@wp-next/core';
+import type { WPPost } from '@wp-next-public/core';
 import YAML from 'yaml';
 
 /**

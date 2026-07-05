@@ -67,5 +67,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npx @wp-next/cli sync --url ${{ secrets.WP_URL }}
+      - run: npx @wp-next-public/cli sync --url ${{ secrets.WP_URL }}
 ```

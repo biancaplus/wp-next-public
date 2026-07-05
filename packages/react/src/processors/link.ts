@@ -1,4 +1,4 @@
-// @wp-next/react — Link processor (HTML transform mode)
+// @wp-next-public/react — Link processor (HTML transform mode)
 // Adds target="_blank" rel="noopener noreferrer" to external links
 
 import type { ContentProcessor } from '../processor.js';

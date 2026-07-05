@@ -1,11 +1,11 @@
 # React Components
 
-`@wp-next/react` provides components and utilities for rendering WordPress content in Next.js.
+`@wp-next-public/react` provides components and utilities for rendering WordPress content in Next.js.
 
 ## Installation
 
 ```bash
-pnpm add @wp-next/react @wp-next/core
+pnpm add @wp-next-public/react @wp-next-public/core
 ```
 
 ## What's Inside

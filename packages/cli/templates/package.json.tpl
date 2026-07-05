@@ -9,8 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@wp-next/core": "^0.1.1",
-    "@wp-next/react": "^0.1.1",
+    "@wp-next-public/core": "^0.1.1",
+    "@wp-next-public/react": "^0.1.1",
     "next": "^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
