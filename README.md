@@ -103,7 +103,10 @@ wp-next-public/
 └── .github/workflows/ # CI + GitHub Pages
 ```
 
-**在线文档**：https://biancaplus.github.io/wp-next-public/
+**在线文档**（中 / En）：https://biancaplus.github.io/wp-next-public/
+
+- 英文默认：`/guide/`
+- 中文：`/zh/guide/`
 
 ---
 
